@@ -71,8 +71,15 @@ export default {
     /*
      ** Nuxt.js modules
      */
-    modules: ['@nuxtjs/pwa', '@nuxtjs/firebase', '@nuxtjs/moment'],
-
+    modules: [
+        '@nuxtjs/pwa',
+        '@nuxtjs/firebase',
+        '@nuxtjs/moment',
+        'vue-plausible'
+    ],
+    plausible: {
+        domain: 'animali.life'
+    },
     // Nuxt-Fire Module Options
     firebase: {
         config: {
